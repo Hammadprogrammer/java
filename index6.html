@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // a) Take three subjects' names from the user and store them in different variables.
+var subject1 = prompt("Enter the first subject: ");
+var subject2 = prompt("Enter the second subject: ");
+var subject3 = prompt("Enter the third subject: ");
+
+// b) Total marks for each subject is 100, store it in another variable.
+var totalMarks = 100;
+
+// c) Take obtained marks for the first subject from the user and store it in a different variable.
+var obtainedMarksSubject1 = parseFloat(prompt("Enter the obtained marks for " + subject1 + ": "));
+
+// d) Take obtained marks for the remaining 2 subjects from the user and store them in variables.
+var obtainedMarksSubject2 = parseFloat(prompt("Enter the obtained marks for " + subject2 + ": "));
+var obtainedMarksSubject3 = parseFloat(prompt("Enter the obtained marks for " + subject3 + ": "));
+
+// e) Now calculate total marks and percentage.
+var totalObtainedMarks = obtainedMarksSubject1 + obtainedMarksSubject2 + obtainedMarksSubject3;
+var percentage = (totalObtainedMarks / (3 * totalMarks)) * 100;
+
+// Displaying the result using alerts
+alert("Result:\n\n" +
+    "1. " + subject1 + ": Obtained Marks - " + obtainedMarksSubject1 + "/" + totalMarks + "\n" +
+    "2. " + subject2 + ": Obtained Marks - " + obtainedMarksSubject2 + "/" + totalMarks + "\n" +
+    "3. " + subject3 + ": Obtained Marks - " + obtainedMarksSubject3 + "/" + totalMarks + "\n\n" +
+    "Total Obtained Marks: " + totalObtainedMarks + "\n" +
+    "Percentage: " + percentage.toFixed(2) + "%"
+);
+
+    </script>
+</body>
+</html>
